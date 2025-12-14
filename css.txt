@@ -1,0 +1,143 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400?text=Tax+Preparation'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+#services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
